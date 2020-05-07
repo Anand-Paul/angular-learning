@@ -1,0 +1,162 @@
+[
+    {
+        "id": 1254187,
+        "name": "Thrissur",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 76.216667,
+            "lat": 10.51667
+        }
+    },
+    {
+        "id": 1272018,
+        "name": "Ernākulam",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 76.283333,
+            "lat": 9.98333
+        }
+    },
+    {
+        "id": 1259091,
+        "name": "Kollam",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 76.599998,
+            "lat": 8.88333
+        }
+    },
+    {
+        "id": 1274987,
+        "name": "Kannur",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 75.357628,
+            "lat": 11.86752
+        }
+    },
+    {
+        "id": 1269811,
+        "name": "Idukki",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 76.966667,
+            "lat": 9.85
+        }
+    },
+    {
+        "id": 1264527,
+        "name": "Chennai",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 80.278473,
+            "lat": 13.08784
+        }
+    },
+    {
+        "id": 1273294,
+        "name": "Delhi",
+        "state": "",
+        "country": "IN",
+        "coord": {
+            "lon": 77.216667,
+            "lat": 28.666668
+        }
+    },
+    {
+        "id": 3582383,
+        "name": "Chicago",
+        "state": "",
+        "country": "BZ",
+        "coord": {
+            "lon": -88.300003,
+            "lat": 17.799999
+        }
+    },
+    {
+        "id": 4350049,
+        "name": "California",
+        "state": "MD",
+        "country": "US",
+        "coord": {
+            "lon": -76.507446,
+            "lat": 38.3004
+        }
+    },
+    {
+        "id": 4517009,
+        "name": "London",
+        "state": "OH",
+        "country": "US",
+        "coord": {
+            "lon": -83.44825,
+            "lat": 39.886452
+        }
+    },
+    {
+        "id": 6356055,
+        "name": "Barcelona",
+        "state": "",
+        "country": "ES",
+        "coord": {
+            "lon": 2.12804,
+            "lat": 41.399422
+        }
+    },
+    {
+        "id": 6359304,
+        "name": "Madrid",
+        "state": "",
+        "country": "ES",
+        "coord": {
+            "lon": -3.68275,
+            "lat": 40.489349
+        }
+    },
+    {
+        "id": 292223,
+        "name": "Dubai",
+        "state": "",
+        "country": "AE",
+        "coord": {
+            "lon": 55.304722,
+            "lat": 25.258169
+        }
+    },
+    {
+        "id": 290291,
+        "name": "Kingdom of Bahrain",
+        "state": "",
+        "country": "BH",
+        "coord": {
+            "lon": 50.5,
+            "lat": 26
+        }
+    },
+    {
+        "id": 2193732,
+        "name": "Auckland",
+        "state": "",
+        "country": "NZ",
+        "coord": {
+            "lon": 174.743042,
+            "lat": -36.85582
+        }
+    },
+    {
+        "id": 2642800,
+        "name": "Melbourne",
+        "state": "",
+        "country": "GB",
+        "coord": {
+            "lon": -0.85925,
+            "lat": 53.88755
+        }
+    }
+]

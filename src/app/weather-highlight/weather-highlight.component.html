@@ -1,0 +1,68 @@
+<div class="app-highlight">
+    <ng-container *ngIf="data && data['weather'] && !loadingHighlight else loader">
+        <div class="app-highlight__title">
+            <h1>{{ data['name'] }} : Lat : {{ data['coord']['lat'] }}, Long : {{ data['coord']['lon'] }}</h1>
+            <span>{{ data['dt'] * 1000 | date: "EEEE d MMMM" }}</span>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="app-highlight__main">
+                    <img src="http://openweathermap.org/img/wn/{{ data['weather'][0]['icon'] }}@2x.png"
+                        class="app-highlight__main-image" alt="weather icon">
+                    <div class="app-highlight__desc">
+                        <h1 class="app-highlight__main-temp">
+                            {{ weatherService.convertTemperature(data['main']['temp']) }}</h1>
+                        <h4 class="app-highlight__main-title">{{ data['weather'][0]['main'] }}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="app-highlight__properties">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">
+                                    {{ weatherService.convertTemperature(data['main']['temp_max']) }}</h6>
+                                <span class="app-highlight__properties-block-title">High</span>
+                            </div>
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">
+                                    {{ weatherService.convertTemperature(data['main']['temp_min']) }}</h6>
+                                <span class="app-highlight__properties-block-title">Low</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">{{ data['wind']['speed'] }} Mph</h6>
+                                <span class="app-highlight__properties-block-title">Wind</span>
+                            </div>
+
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">NIL</h6>
+                                <span class="app-highlight__properties-block-title">Rain</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">
+                                    {{ data['sys']['sunrise'] * 1000 | date: "hh:mm" }}</h6>
+                                <span class="app-highlight__properties-block-title">Sunrise</span>
+                            </div>
+
+                            <div class="app-highlight__properties-block">
+                                <h6 class="app-highlight__properties-block-value">
+                                    {{ data['sys']['sunset'] * 1000 | date: "hh:mm" }}</h6>
+                                <span class="app-highlight__properties-block-title">Sunset</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+    <ng-template #loader>
+        <div class="app-highlight__loader">
+            <app-loader></app-loader>
+        </div>
+    </ng-template>
+</div>

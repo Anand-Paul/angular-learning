@@ -1,0 +1,11 @@
+<div class="app-instances">
+    <h4 class="app-instances__title">Todays Weather</h4>
+    <div class="app-instances__content">
+        <ng-container *ngIf="data && !loadingInstances else loader">
+            <app-weather-instance *ngFor="let item of data['list']" [data]="item"></app-weather-instance>
+        </ng-container>
+        <ng-template #loader>
+            <app-loader></app-loader>
+        </ng-template>
+    </div>
+</div>

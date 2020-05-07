@@ -1,0 +1,6 @@
+<div class="app-instance">
+    <h6 class="app-instance__time">{{ data['dt'] * 1000 | date: "h a" }}</h6>
+    <img src="http://openweathermap.org/img/wn/{{ data['weather'][0]['icon'] }}@2x.png" class="app-instance__image"
+        alt="weather icon">
+    <h6 class="app-instance__temp">{{ weatherService.convertTemperature(data['main']['temp']) }}</h6>
+</div>
