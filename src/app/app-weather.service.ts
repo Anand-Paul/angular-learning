@@ -61,10 +61,4 @@ export class AppWeatherService {
   public getCities() {
     return this.httpClient.get("assets/city.json");
   }
-
-  //Function to convert the Kelvin to Celsius°
-  public convertTemperature(temp: number) {
-    let actual = temp - 273;
-    return actual.toFixed(0) + '°';
-  }
 }

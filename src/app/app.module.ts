@@ -13,6 +13,7 @@ import { LoaderComponent } from './loader/loader.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { FormsComponent } from './forms/forms.component';
+import { KelvinToCelsiusPipe } from './kelvin-to-celsius.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsComponent } from './forms/forms.component';
     LoaderComponent,
     HomeComponent,
     HeaderComponent,
-    FormsComponent
+    FormsComponent,
+    KelvinToCelsiusPipe
   ],
   imports: [
     BrowserModule,
